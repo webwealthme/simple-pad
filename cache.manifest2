@@ -1,0 +1,22 @@
+CACHE MANIFEST
+
+# Version 2.0.0
+
+CACHE:
+
+favicon.png
+
+icon57.png
+icon72.png
+icon114.png
+icon120.png
+icon152.png
+icon514.png
+
+style.css
+
+script.js
+http://code.jquery.com/jquery-latest.min.js
+
+NETWORK:
+*

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+<meta charset="utf-8" />
+<title>Simple Pad - Zen notepad</title>
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon152.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OmPad">
+<link id="default" href="style.css" rel="stylesheet">
+<style id="template"></style>
+</head>
+
+<body>
+
+<div id="wrap">
+
+	<div id="menu">
+		<h1 id="logo">Simple Pad</h1>
+		<ul id="style">
+			<li class="typography">
+				<span>Font</span>
+				<a href="#" class="serif">A</a>
+				<a href="#" class="sans">A</a>
+				<a href="#" class="cursive">A</a>
+				<a href="#" class="mono">A</a>
+			</li>
+			<li class="size">
+				<span>Size</span>
+				<a href="#" class="small">S</a>
+				<a href="#" class="medium">M</a>
+				<a href="#" class="large">L</a>
+				<a href="#" class="xlarge">X</a>
+			</li>
+			<li class="color">
+				<span>Color</span>
+				<a href="#" class="cblack">&nbsp;</a>
+				<a href="#" class="cdark">&nbsp;</a>
+				<a href="#" class="cblue">&nbsp;</a>
+				<a href="#" class="cwhite">&nbsp;</a>
+			</li>
+			<li class="background">
+				<span>Back</span>
+				<a href="#" class="bwhite">&nbsp;</a>
+				<a href="#" class="bstone">&nbsp;</a>
+				<a href="#" class="bivory">&nbsp;</a>
+				<a href="#" class="bblack">&nbsp;</a>
+			</li>
+			<li class="width">
+				<span>Width</span>
+				<a href="#" class="w1">20</a>
+				<a href="#" class="w2">40</a>
+				<a href="#" class="w3">60</a>
+				<a href="#" class="w4">100</a>
+			</li>
+		</ul>
+	</div>
+
+	<ul id="files"></ul>
+	
+	<div id="t" contenteditable="true"></div>
+
+	<div id="controls">
+		<a data-role="h1" href="#">h1</a>
+		<a data-role="h2" href="#">h2</a>
+		<a data-role="h3" href="#">h3</a>
+		<a data-role="h4" href="#">h4</a>
+		<a data-role="h5" href="#">h5</a>
+		<a data-role="h6" href="#">h6</a>
+		<a data-role="p" href="#">p</a>
+		<a data-role="insertUnorderedList" href="#">ul</a>
+		<a data-role="insertOrderedList" href="#">ol</a>
+		<a data-role="bold" href="#">b</a>
+		<a data-role="italic" href="#">i</a>
+		<a data-role="removeFormat" href="#">✎</a>
+		<!-- 
+		https://developer.mozilla.org/en-US/docs/Rich-Text_Editing_in_Mozilla#Executing_Commands
+		<a data-role="undo" href="#">⟲</a>
+		<a data-role="redo" href="#">⟳</a>
+		<a data-role="justifyLeft" href="#"><i class="fa fa-align-left"></i></a>
+		<a data-role="justifyCenter" href="#"><i class="fa fa-align-center"></i></a>
+		<a data-role="justifyRight" href="#"><i class="fa fa-align-right"></i></a>
+		<a data-role="justifyFull" href="#"><i class="fa fa-align-justify"></i></a>
+		<a data-role="indent" href="#"><i class="fa fa-indent"></i></a>
+		<a data-role="outdent" href="#"><i class="fa fa-outdent"></i></a> 
+		<a data-role="subscript" href="#"><i class="fa fa-subscript"></i></a>
+		<a data-role="superscript" href="#"><i class="fa fa-superscript"></i></a>
+		-->
+	</div>
+
+	<div class="details"><span id="words"></span> words</div>
+	
+	<div id="box-help" title="Click to close">
+		
+		<p class="image"><img src="icon120.png" alt="Simple Pad logo"></p>
+
+		<h1>Simple Pad</h1>
+		
+		<p style="font-size:133%">Simple Pad is a notepad to store notes, texts or even poems. It is focused in simplicity and speed for quick note taking while inspiration is at its peak.</p>
+		
+		<ul>
+			<li><b>Customizable</b>: Choose font color, size and more (top left)</li>
+			<li><b>5 Pages</b>: Use them to save different content (bottom left)</li>
+			<li><b>Saves as you type</b>: If you close the browser it will still be there</li>
+		</ul>
+		
+		<p>Simple Pad is build in HTML5/jQuery and it is a great example on how modern websites can be so tiny yet so functional. You can create your own themes very easily. You can also use OmPad while being offline.</p>
+		
+
+		<p class="footnote">Click to close</p>
+
+	</div>
+
+</div><!--/wrap-->
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
